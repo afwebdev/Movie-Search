@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Include the stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./index.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+
+  <title>Open Movie DB</title>
+</head>
+
+<body>
+  <header>
+    <div class="navwrap">
+      <ul class="navbar">
+        <li> <a href="./index.html">Home</a></li>
+        <li> <a href="#">My Collection</a> </li>
+        <li> <a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="wrapper">
+    <h1 id="head">Find a Movie</h1>
+    <form id="search-form">
+      <input placeholder="Search.." type="text" id="search-term" name="search-term" />
+      <button>Search</button>
+    </form>
+    <div class="container">
+      <ul id="movieList">
+      </ul>
+    </div>
+
+    <div class="movie">
+      <div class="movieTitle">.</div>
+
+      <!-- container encapsulating all info -->
+      <div class="biginfo">
+        <!-- left side content (info) -->
+        <aside class="movieInfo">
+          <!-- wrapper for info box display: col -->
+          <div class="infobox">
+            <!-- the main parent, display: row -->
+            <div class="innerInfo">
+              <div class="sideinfo">
+                <p class="director">hey im some info</p>
+                <p class="production">hey im some info</p>
+                <p class="award">hey im some info</p>
+              </div>
+              <div class="summary-col">
+                <div class="summary">
+                  <p id="summary">lorem ipsums</p>
+                </div>
+                <div class="underinfo">
+                  <p class="rating">Rating: </p>
+                  <p class="release">Relased: </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- right side movie poster  -->
+        <div class="moviePoster"></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- Add footer content -->
+  </footer>
+
+</body>
+
+</html>
