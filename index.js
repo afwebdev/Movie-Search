@@ -9,7 +9,7 @@ $(document).ready(function () {
   //REMOVE COMMENT BELOW ME AFTER DEBUG.
 
   function getMovies(title) {
-    $.get("http://www.omdbapi.com/?type=movie&s=" + title + "&apikey=" + API_KEY, function (data) {
+    $.get("https://www.omdbapi.com/?type=movie&s=" + title + "&apikey=" + API_KEY, function (data) {
       console.log("Search Results: \n");
       $('#info').html('');
       //results of API call. Complete data here. Send data
@@ -21,7 +21,7 @@ $(document).ready(function () {
   //Get FULL movie info based on title from search results.
   //this will get called when a user clicks a title after search.
   function getFullInfo(id) {
-    $.get("http://www.omdbapi.com/?type=movie&t=" + id + "&apikey=" + API_KEY, function (fullInfo) {
+    $.get("https://www.omdbapi.com/?type=movie&t=" + id + "&apikey=" + API_KEY, function (fullInfo) {
       console.log(fullInfo);
       //SEND fullinfo over to makeInfo so we can use our data
       //to fill our page content.
