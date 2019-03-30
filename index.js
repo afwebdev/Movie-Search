@@ -85,21 +85,12 @@ $(document).ready(function () {
   });
 
 
-
   $(document).on('click', '.overlay', function (e) {
     var sendTitle = $(this).text();
     $("#movieList li").fadeOut(1000);
     $('.movie').fadeIn(3500);
-    $('.wrapper').css("height", "100%");
     console.log(sendTitle);
     getFullInfo(sendTitle);
   });
-
-
-
-
-
-
-
 
 });
