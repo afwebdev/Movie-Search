@@ -4,10 +4,6 @@ API_KEY = '6d59ec8';
 
 $(document).ready(function () {
 
-  //Initially hide the movieInfo div.
-
-  //REMOVE COMMENT BELOW ME AFTER DEBUG.
-
   function getMovies(title) {
     $.get("https://www.omdbapi.com/?type=movie&s=" + title + "&apikey=" + API_KEY, function (data) {
       console.log("Search Results: \n");
