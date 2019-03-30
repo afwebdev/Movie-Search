@@ -3,8 +3,6 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  width: 100%;
-  height: 100%;
   background-image: linear-gradient(to bottom, #000a12, #393c42, #717377, #afafb1, #efefef);
   background-repeat: no-repeat;
   color: #efefef;
@@ -60,6 +58,7 @@ ul {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  color: black;
 }
 
 .movieTitle {
@@ -80,11 +79,6 @@ ul {
   margin: 0;
 }
 
-.infobox{
-  color: black;
-  width: 100%;
-  height: 100%;
-}
 
 .summary{
   display: flex;
@@ -96,6 +90,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .sideinfo{
@@ -127,6 +123,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
 }
 
 .container {
@@ -225,7 +222,6 @@ button {
 
 .innerInfo{
   display: flex;
-  height: 100%;
 }
 
 
@@ -242,5 +238,12 @@ button {
     justify-content: center;
   }
 
+  .innerInfo{
+    flex-direction: column;
+  }
+
+  .biginfo{
+    justify-content: center;
+  }
 
 }
