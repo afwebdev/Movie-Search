@@ -1,11 +1,11 @@
-body{
+html{
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
   background-image: linear-gradient(to bottom, #000a12, #393c42, #717377, #afafb1, #efefef);
   background-repeat: no-repeat;
   color: #efefef;
-  height: 100%;
+  min-height: 100%;
   overflow: auto;
 }
 
