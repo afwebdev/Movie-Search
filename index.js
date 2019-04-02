@@ -53,6 +53,7 @@ $(document).ready(function () {
     $('.director').text(`Directed by: ${director} `);
     $('.award').text(`Awards: ${award}`);
     $('.production').text(`Production: ${production}`);
+    $('.actors').text(`Actors: ${actors}`);
   }
 
   function makeThumb(data) {
@@ -68,7 +69,20 @@ $(document).ready(function () {
       if (poster === "N/A") { //If Poster is N/A the movie is probably irrelvant and not useful to display.
         console.log("Removed: " + title + ": " + poster);
       } else {
-        $('#movieList').append('<li class="movieThumb"><div class="imgcontainer"><img class="image" src=' + poster + 'alt="poster"><div class="overlay"><div class="text">' + title + '</div></div></div></li>');
+        // $('#movieList').append('<li class="movieThumb"><div class="imgcontainer"><img class="image" src=' + poster + 'alt="poster"><div class="overlay"><div class="text">' + title + '</div></div></div></li>');
+        $('#movieList').append(`
+        <li class="movieThumb">
+          <div class="imgcontainer">
+            <img class="image" src="${poster}" alt="poster">
+            <div class="overlay">
+              <div class="text">${title}
+              </div>
+           </div>
+        </div>
+     </li>
+      `);
+
+
       }
     }
   }
@@ -92,5 +106,11 @@ $(document).ready(function () {
     console.log(sendTitle);
     getFullInfo(sendTitle);
   });
+
+  function goBack(title) {
+
+
+  }
+
 
 });

@@ -23,7 +23,6 @@ span {
   width: 100%;
 }
 
-
 #movieList {
   display: flex;
   flex-direction: row;
@@ -75,6 +74,7 @@ ul {
 }
 
 .moviePoster {
+  flex: 1;
   padding: 0;
   margin: 0;
 }
@@ -86,6 +86,7 @@ ul {
 }
 
 .summary-col{
+  flex: 3;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -95,6 +96,7 @@ ul {
 }
 
 .sideinfo{
+  flex: 1;
   padding: 2em;
   background-color: #efefef;
   display: flex;
@@ -248,9 +250,6 @@ img{
   width: 100%;
   align-items: center;
   justify-content: flex-end;
-}
-
-.botnav span{
 }
 
 @media screen and (max-width: 900px){
